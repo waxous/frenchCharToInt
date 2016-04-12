@@ -1,5 +1,7 @@
 # frenchCharToInt
 
+to use it: python main.py
+
 With this tool you can do mathematicals calculations with char expression like:
 
 "deux cent trente mille quatre-vingt-deux - huit cent mille deux cent + quarante et un % dix-sept * soixante-dix"
