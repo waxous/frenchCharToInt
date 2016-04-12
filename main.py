@@ -37,7 +37,7 @@ chaine = re.sub('\-',' - ',chaine)
 chaine = re.sub('\+',' + ',chaine)
 chaine = re.sub('\%',' % ',chaine)
 chaine = re.sub('\*',' * ',chaine)
-# "huit cent cinquante trois mille - trois cent soixante-trois+ quarante mille deux cent%sept"
+
 signParse = []
 for chaineC in range (len(chaine)):
     if chaine[chaineC] == "-" or chaine[chaineC] == "+" or chaine[chaineC] == "*" or chaine[chaineC] == "%":
