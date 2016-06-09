@@ -1,7 +1,7 @@
 import re
 from lettreToIntPY import parse
 
-special = ["deux","trois","quatre","cinq","six","sept","huit","neuf"]
+special = ["deux","trois","quatre","cinq","six","sept","huit","neuf","dix","onze","douze","treize","quatorze","quinze","seize"]
 
 chaine = input("Entrez un calcul: ")
 chaine = chaine.lower()
@@ -20,17 +20,17 @@ chaine = re.sub("dix-sept","dixsept",chaine)
 chaine = re.sub("dix-huit","dixhuit",chaine)
 chaine = re.sub("dix-neuf","dixneuf",chaine)
 for i in range (len(special)):
-    chaine = re.sub("vingt-"+special[i],"vingt ",chaine)
+    chaine = re.sub("vingt-"+special[i],"vingt "+special[i],chaine)
 for i in range (len(special)):
-    chaine = re.sub("trente-"+special[i],"trente ",chaine)
+    chaine = re.sub("trente-"+special[i],"trente "+special[i],chaine)
 for i in range (len(special)):
-    chaine = re.sub("quarante-"+special[i],"quarante ",chaine)
+    chaine = re.sub("quarante-"+special[i],"quarante "+special[i],chaine)
 for i in range (len(special)):
-    chaine = re.sub("cinquante-"+special[i],"cinquante ",chaine)
+    chaine = re.sub("cinquante-"+special[i],"cinquante "+special[i],chaine)
 for i in range (len(special)):
-    chaine = re.sub("soixante-"+special[i],"soixante ",chaine)
+    chaine = re.sub("soixante-"+special[i],"soixante "+special[i],chaine)
 for i in range (len(special)):
-    chaine = re.sub("quatre-vingt-"+special[i],"quatrevingt ",chaine)
+    chaine = re.sub("quatre-vingt-"+special[i],"quatrevingt "+special[i],chaine)
 chaine = re.sub("quatre-vingt","quatrevingt ",chaine)
 chaine = re.sub('quatre vingt','quatrevingt',chaine)
 chaine = re.sub('\-',' - ',chaine)
