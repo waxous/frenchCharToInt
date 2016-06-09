@@ -3,7 +3,7 @@ from lettreToIntPY import parse
 
 special = ["deux","trois","quatre","cinq","six","sept","huit","neuf","dix","onze","douze","treize","quatorze","quinze","seize"]
 
-chaine = input("Entrez un calcul: ")
+chaine = raw_input("Entrez un calcul: ")
 chaine = chaine.lower()
 chaine = re.sub("0","o",chaine)
 chaine = re.sub("1","i",chaine)
